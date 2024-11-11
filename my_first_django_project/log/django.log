@@ -1,0 +1,29 @@
+INFO 2024-11-11 12:19:16,937 autoreload 15837 133547178487936 Watching for file changes with StatReloader
+INFO 2024-11-11 12:19:29,329 basehttp 15837 133547039917760 "GET /lesson01/ HTTP/1.1" 200 13
+INFO 2024-11-11 12:19:47,485 basehttp 15837 133547039917760 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-11 12:19:50,626 basehttp 15837 133547039917760 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-11 12:20:15,193 basehttp 15837 133547039917760 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:20:18,241 basehttp 15837 133547039917760 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:25:45,636 autoreload 15837 133547178487936 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-11 12:25:45,936 autoreload 16210 140521985515648 Watching for file changes with StatReloader
+INFO 2024-11-11 12:25:59,169 basehttp 16210 140521922102976 "GET /lesson01/ HTTP/1.1" 200 13
+INFO 2024-11-11 12:26:08,878 basehttp 16210 140521922102976 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-11 12:26:19,140 basehttp 16210 140521922102976 "GET /lesson01/ HTTP/1.1" 200 13
+INFO 2024-11-11 12:26:21,254 basehttp 16210 140521922102976 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:26:25,159 basehttp 16210 140521922102976 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:26:26,003 basehttp 16210 140521922102976 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:26:33,404 basehttp 16210 140521922102976 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-11 12:26:35,002 basehttp 16210 140521922102976 "GET /lesson01/random_number/ HTTP/1.1" 200 23
+INFO 2024-11-11 12:26:37,911 basehttp 16210 140521922102976 "GET /lesson01/random_number/ HTTP/1.1" 200 23
+INFO 2024-11-11 12:29:02,902 autoreload 16210 140521985515648 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-11 12:29:03,174 autoreload 16399 127158171828352 Watching for file changes with StatReloader
+INFO 2024-11-11 12:29:37,439 autoreload 16399 127158171828352 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-11 12:29:37,717 autoreload 16433 130631676334208 Watching for file changes with StatReloader
+INFO 2024-11-11 12:29:40,265 views 16433 130631612761792 The random number is 58
+INFO 2024-11-11 12:29:40,266 basehttp 16433 130631612761792 "GET /lesson01/random_number/ HTTP/1.1" 200 23
+INFO 2024-11-11 12:29:43,145 views 16433 130631612761792 The random number is 74
+INFO 2024-11-11 12:29:43,145 basehttp 16433 130631612761792 "GET /lesson01/random_number/ HTTP/1.1" 200 23
+INFO 2024-11-11 12:29:51,104 views 16433 130631612761792 The dice rolled a 4
+INFO 2024-11-11 12:29:51,104 basehttp 16433 130631612761792 "GET /lesson01/dice/ HTTP/1.1" 200 19
+INFO 2024-11-11 12:30:02,967 views 16433 130631612761792 The coin flip resulted in Heads
+INFO 2024-11-11 12:30:02,968 basehttp 16433 130631612761792 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
