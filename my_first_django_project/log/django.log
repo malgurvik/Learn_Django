@@ -27,3 +27,515 @@ INFO 2024-11-11 12:29:51,104 views 16433 130631612761792 The dice rolled a 4
 INFO 2024-11-11 12:29:51,104 basehttp 16433 130631612761792 "GET /lesson01/dice/ HTTP/1.1" 200 19
 INFO 2024-11-11 12:30:02,967 views 16433 130631612761792 The coin flip resulted in Heads
 INFO 2024-11-11 12:30:02,968 basehttp 16433 130631612761792 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 07:25:13,179 autoreload 9223 134136791924864 Watching for file changes with StatReloader
+WARNING 2024-11-12 07:25:16,009 log 9223 134136658396864 Not Found: /
+WARNING 2024-11-12 07:25:16,010 basehttp 9223 134136658396864 "GET / HTTP/1.1" 404 2326
+WARNING 2024-11-12 07:25:16,040 log 9223 134136658396864 Not Found: /favicon.ico
+WARNING 2024-11-12 07:25:16,040 basehttp 9223 134136658396864 "GET /favicon.ico HTTP/1.1" 404 2377
+INFO 2024-11-12 07:25:28,752 basehttp 9223 134136658396864 "GET /lesson01/ HTTP/1.1" 200 13
+INFO 2024-11-12 07:25:39,082 basehttp 9223 134136658396864 "GET /lesson01/main HTTP/1.1" 301 0
+INFO 2024-11-12 07:25:39,085 basehttp 9223 134136647911104 "GET /lesson01/main/ HTTP/1.1" 200 35
+INFO 2024-11-12 07:26:03,334 basehttp 9223 134136647911104 "GET /lesson01/main/ HTTP/1.1" 200 35
+INFO 2024-11-12 07:26:03,605 autoreload 9223 134136791924864 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 07:26:03,884 autoreload 9331 139638832275584 Watching for file changes with StatReloader
+INFO 2024-11-12 07:26:09,013 views 9331 139638769452736 Main page accessed
+INFO 2024-11-12 07:26:09,015 basehttp 9331 139638769452736 "GET /lesson01/main/ HTTP/1.1" 200 35
+INFO 2024-11-12 07:28:31,649 autoreload 9331 139638832275584 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 07:28:31,924 autoreload 9486 123423387570304 Watching for file changes with StatReloader
+INFO 2024-11-12 07:28:39,466 views 9486 123423325947584 About page accessed
+INFO 2024-11-12 07:28:39,467 basehttp 9486 123423325947584 "GET /lesson01/about/ HTTP/1.1" 200 70
+INFO 2024-11-12 09:01:01,246 autoreload 18279 124050383466624 Watching for file changes with StatReloader
+INFO 2024-11-12 09:01:25,427 autoreload 18279 124050383466624 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 09:01:25,668 autoreload 18307 138264195764352 Watching for file changes with StatReloader
+INFO 2024-11-12 09:02:01,844 autoreload 18307 138264195764352 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 09:02:02,082 autoreload 18350 129152401391744 Watching for file changes with StatReloader
+WARNING 2024-11-12 09:02:05,672 log 18350 129152338364096 Not Found: /
+WARNING 2024-11-12 09:02:05,673 basehttp 18350 129152338364096 "GET / HTTP/1.1" 404 2326
+ERROR 2024-11-12 09:02:31,778 log 18350 129152338364096 Internal Server Error: /lesson01/heads_or_tails/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 16, in heads_or_tails
+    flip.save()
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1848, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/base/operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 97, in inner
+    with self:
+         ^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-11-12 09:02:31,780 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 500 131948
+INFO 2024-11-12 09:02:53,062 views 18350 129152338364096 The coin flip resulted in Heads
+INFO 2024-11-12 09:02:53,062 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:54,719 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:02:54,720 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:55,794 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:02:55,795 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:56,960 views 18350 129152338364096 The coin flip resulted in Heads
+INFO 2024-11-12 09:02:56,961 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:58,160 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:02:58,160 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:58,915 views 18350 129152338364096 The coin flip resulted in Heads
+INFO 2024-11-12 09:02:58,916 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:02:59,880 views 18350 129152338364096 The coin flip resulted in Heads
+INFO 2024-11-12 09:02:59,881 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:03:00,697 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:03:00,697 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:03:01,410 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:03:01,410 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:03:02,032 views 18350 129152338364096 The coin flip resulted in Tails
+INFO 2024-11-12 09:03:02,032 basehttp 18350 129152338364096 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:14:54,402 autoreload 18350 129152401391744 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:14:54,729 autoreload 19024 135585270685824 Watching for file changes with StatReloader
+INFO 2024-11-12 09:20:19,893 autoreload 19024 135585270685824 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:20:20,146 autoreload 19328 132787721494656 Watching for file changes with StatReloader
+INFO 2024-11-12 09:25:19,437 autoreload 19328 132787721494656 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:25:19,730 autoreload 19596 130522188148864 Watching for file changes with StatReloader
+INFO 2024-11-12 09:25:30,388 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 107
+INFO 2024-11-12 09:26:32,767 views 19596 130522124650176 The coin flip resulted in Tails
+INFO 2024-11-12 09:26:32,768 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:36,004 views 19596 130522124650176 The coin flip resulted in Tails
+INFO 2024-11-12 09:26:36,005 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:37,466 views 19596 130522124650176 The coin flip resulted in Heads
+INFO 2024-11-12 09:26:37,467 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:38,324 views 19596 130522124650176 The coin flip resulted in Heads
+INFO 2024-11-12 09:26:38,325 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:39,000 views 19596 130522124650176 The coin flip resulted in Heads
+INFO 2024-11-12 09:26:39,001 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:39,737 views 19596 130522124650176 The coin flip resulted in Tails
+INFO 2024-11-12 09:26:39,737 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-12 09:26:56,413 basehttp 19596 130522124650176 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 109
+INFO 2024-11-12 09:33:45,017 autoreload 19596 130522188148864 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 09:33:45,341 autoreload 20054 134931828506752 Watching for file changes with StatReloader
+WARNING 2024-11-12 09:33:59,323 log 20054 134931697108672 Not Found: /lesson01/heads_or_tails_stats/5
+WARNING 2024-11-12 09:33:59,324 basehttp 20054 134931697108672 "GET /lesson01/heads_or_tails_stats/5 HTTP/1.1" 404 4173
+INFO 2024-11-12 09:34:31,732 autoreload 20054 134931828506752 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-12 09:34:32,001 autoreload 20121 131136436072576 Watching for file changes with StatReloader
+ERROR 2024-11-12 09:34:34,170 log 20121 131136374179520 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 11, in flip_statistics
+    total_flips = HeadsOrTails.objects.count().order_by('-created_at')[:last]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'order_by'
+ERROR 2024-11-12 09:34:34,173 basehttp 20121 131136374179520 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 76414
+ERROR 2024-11-12 09:35:56,877 log 20121 131136374179520 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 11, in flip_statistics
+    total_flips = HeadsOrTails.objects.order_by('-created_at')[:last].count()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'order_by'
+ERROR 2024-11-12 09:35:56,879 basehttp 20121 131136374179520 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 76551
+INFO 2024-11-12 09:35:57,612 autoreload 20121 131136436072576 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:35:57,873 autoreload 20201 123920278069376 Watching for file changes with StatReloader
+INFO 2024-11-12 09:35:58,688 basehttp 20201 123920139159232 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 113
+INFO 2024-11-12 09:36:47,496 basehttp 20201 123920139159232 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 113
+INFO 2024-11-12 09:36:48,200 autoreload 20201 123920278069376 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:36:48,477 autoreload 20257 133802829250688 Watching for file changes with StatReloader
+INFO 2024-11-12 09:36:50,338 basehttp 20257 133802766632640 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 113
+INFO 2024-11-12 09:38:09,464 basehttp 20257 133802766632640 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 113
+INFO 2024-11-12 09:38:09,959 autoreload 20257 133802829250688 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:38:10,229 autoreload 20337 138085008642176 Watching for file changes with StatReloader
+ERROR 2024-11-12 09:38:12,624 log 20337 138084874192576 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 12, in flip_statistics
+    heads_count = flips.filter(flip_result='Heads').count()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1488, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+ERROR 2024-11-12 09:38:12,625 basehttp 20337 138084874192576 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 85618
+ERROR 2024-11-12 09:42:04,635 log 20337 138084874192576 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 12, in flip_statistics
+    heads_count = flips.filter(flip_result='Heads').count()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1488, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+ERROR 2024-11-12 09:42:04,636 basehttp 20337 138084874192576 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 85603
+INFO 2024-11-12 09:42:05,300 autoreload 20337 138085008642176 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 09:42:05,564 autoreload 20551 130176943186048 Watching for file changes with StatReloader
+INFO 2024-11-12 09:42:05,638 basehttp 20551 130176881002176 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 18
+INFO 2024-11-12 10:05:28,026 autoreload 20551 130176943186048 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 10:05:28,301 autoreload 21921 129308131500160 Watching for file changes with StatReloader
+ERROR 2024-11-12 10:05:30,042 log 21921 129308068677312 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 12, in flip_statistics
+    heads_count = flips.filter(flip_result='Heads').count()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1488, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+ERROR 2024-11-12 10:05:30,043 basehttp 21921 129308068677312 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 85618
+ERROR 2024-11-12 10:15:45,526 log 21921 129308068677312 Internal Server Error: /lesson01/heads_or_tails_stats/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 22, in heads_or_tails_stats
+    return HttpResponse(f'{HeadsOrTails.flip_statistics(last_n_flips)}')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py", line 12, in flip_statistics
+    heads_count = HeadsOrTails.objects.filter(flip_result='Heads').order_by('-created_at')[:last_n_flips].count()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1488, in _filter_or_exclude
+    raise TypeError("Cannot filter a query once a slice has been taken.")
+TypeError: Cannot filter a query once a slice has been taken.
+ERROR 2024-11-12 10:15:45,526 basehttp 21921 129308068677312 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 500 85812
+INFO 2024-11-12 10:15:45,883 autoreload 21921 129308131500160 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 10:15:46,178 autoreload 23472 131736115798144 Watching for file changes with StatReloader
+INFO 2024-11-12 10:15:47,647 basehttp 23472 131736052696768 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 18
+INFO 2024-11-12 10:16:44,161 basehttp 23472 131736052696768 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 18
+INFO 2024-11-12 10:16:44,563 autoreload 23472 131736115798144 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 10:16:44,826 autoreload 23539 134182389387392 Watching for file changes with StatReloader
+INFO 2024-11-12 10:16:46,181 basehttp 23539 134182325978816 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 114
+INFO 2024-11-12 10:20:36,028 basehttp 23539 134182325978816 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 114
+INFO 2024-11-12 10:20:36,887 autoreload 23539 134182389387392 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/models.py changed, reloading.
+INFO 2024-11-12 10:20:37,143 autoreload 23750 124818098659456 Watching for file changes with StatReloader
+INFO 2024-11-12 10:20:38,311 basehttp 23750 124818036885184 "GET /lesson01/heads_or_tails_stats/ HTTP/1.1" 200 86
+INFO 2024-11-12 10:53:13,022 autoreload 25911 125117594337408 Watching for file changes with StatReloader
+INFO 2024-11-12 10:55:30,596 autoreload 25911 125117594337408 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/models.py changed, reloading.
+INFO 2024-11-12 10:55:30,851 autoreload 26041 125695475011712 Watching for file changes with StatReloader
+INFO 2024-11-12 10:55:50,125 basehttp 26041 125695411881664 "GET /lesson02 HTTP/1.1" 301 0
+INFO 2024-11-12 10:55:50,128 basehttp 26041 125695401395904 "GET /lesson02/ HTTP/1.1" 200 13
+INFO 2024-11-18 10:23:05,573 autoreload 8871 125560366715008 Watching for file changes with StatReloader
+WARNING 2024-11-18 10:23:19,013 log 8871 125560304961216 Not Found: /
+WARNING 2024-11-18 10:23:19,014 basehttp 8871 125560304961216 "GET / HTTP/1.1" 404 2478
+WARNING 2024-11-18 10:23:19,073 log 8871 125560304961216 Not Found: /favicon.ico
+WARNING 2024-11-18 10:23:19,074 basehttp 8871 125560304961216 "GET /favicon.ico HTTP/1.1" 404 2529
+WARNING 2024-11-18 10:23:25,768 log 8871 125560304961216 Not Found: /docs
+WARNING 2024-11-18 10:23:25,769 basehttp 8871 125560304961216 "GET /docs HTTP/1.1" 404 2508
+INFO 2024-11-18 10:23:28,390 views 8871 125560304961216 The coin flip resulted in Heads
+INFO 2024-11-18 10:23:28,390 basehttp 8871 125560304961216 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 31
+INFO 2024-11-18 20:02:07,469 autoreload 12645 136730583466112 Watching for file changes with StatReloader
+WARNING 2024-11-18 20:02:12,057 log 12645 136730520848064 Not Found: /
+WARNING 2024-11-18 20:02:12,058 basehttp 12645 136730520848064 "GET / HTTP/1.1" 404 2478
+WARNING 2024-11-18 20:02:12,179 log 12645 136730520848064 Not Found: /favicon.ico
+WARNING 2024-11-18 20:02:12,180 basehttp 12645 136730520848064 "GET /favicon.ico HTTP/1.1" 404 2529
+WARNING 2024-11-18 20:02:23,623 log 12645 136730520848064 Not Found: /main
+WARNING 2024-11-18 20:02:23,624 basehttp 12645 136730520848064 "GET /main HTTP/1.1" 404 2508
+INFO 2024-11-18 20:03:02,932 views 12645 136730520848064 Main page accessed
+INFO 2024-11-18 20:03:02,935 basehttp 12645 136730520848064 "GET /lesson01/main/ HTTP/1.1" 200 197
+INFO 2024-11-18 20:06:05,504 autoreload 12645 136730583466112 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 20:06:05,830 autoreload 12950 129557698584704 Watching for file changes with StatReloader
+INFO 2024-11-18 20:06:16,937 views 12950 129557636056768 About page accessed
+INFO 2024-11-18 20:06:16,940 basehttp 12950 129557636056768 "GET /lesson01/about/ HTTP/1.1" 200 219
+INFO 2024-11-18 20:15:09,087 views 12950 129557636056768 About page accessed
+ERROR 2024-11-18 20:15:09,117 log 12950 129557636056768 Internal Server Error: /lesson01/about/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 50, in about
+    return render(request,"lesson01_app/about.html", {"title": "About"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-11-18 20:15:09,119 basehttp 12950 129557636056768 "GET /lesson01/about/ HTTP/1.1" 500 134251
+INFO 2024-11-18 20:16:28,387 views 12950 129557636056768 About page accessed
+INFO 2024-11-18 20:16:28,389 basehttp 12950 129557636056768 "GET /lesson01/about/ HTTP/1.1" 200 222
+INFO 2024-11-18 20:16:43,803 views 12950 129557636056768 Main page accessed
+INFO 2024-11-18 20:16:43,804 basehttp 12950 129557636056768 "GET /lesson01/main/ HTTP/1.1" 200 272
+INFO 2024-11-18 20:26:02,527 views 12950 129557552170688 Main page accessed
+INFO 2024-11-18 20:26:02,528 basehttp 12950 129557552170688 "GET /lesson01/main/ HTTP/1.1" 200 370
+WARNING 2024-11-18 20:26:05,717 log 12950 129557552170688 Not Found: /lesson01/main/url main
+WARNING 2024-11-18 20:26:05,718 basehttp 12950 129557552170688 "GET /lesson01/main/url%20main HTTP/1.1" 404 4300
+WARNING 2024-11-18 20:28:31,424 log 12950 129557552170688 Not Found: /lesson01/main/url main
+WARNING 2024-11-18 20:28:31,424 basehttp 12950 129557552170688 "GET /lesson01/main/url%20main HTTP/1.1" 404 4300
+WARNING 2024-11-18 20:28:33,337 log 12950 129557552170688 Not Found: /lesson01/main/url main
+WARNING 2024-11-18 20:28:33,338 basehttp 12950 129557552170688 "GET /lesson01/main/url%20main HTTP/1.1" 404 4300
+WARNING 2024-11-18 20:28:36,979 log 12950 129557552170688 Not Found: /lesson01/main/url main
+WARNING 2024-11-18 20:28:36,979 basehttp 12950 129557552170688 "GET /lesson01/main/url%20main HTTP/1.1" 404 4300
+INFO 2024-11-18 20:30:44,759 views 12950 129557552170688 Main page accessed
+INFO 2024-11-18 20:30:44,764 basehttp 12950 129557552170688 "GET /lesson01/main/ HTTP/1.1" 200 424
+INFO 2024-11-18 20:30:47,646 views 12950 129557552170688 About page accessed
+INFO 2024-11-18 20:30:47,647 basehttp 12950 129557552170688 "GET /lesson01/about/ HTTP/1.1" 200 374
+INFO 2024-11-18 20:30:49,525 views 12950 129557552170688 Main page accessed
+INFO 2024-11-18 20:30:49,525 basehttp 12950 129557552170688 "GET /lesson01/main/ HTTP/1.1" 200 424
+INFO 2024-11-18 21:04:35,702 autoreload 12950 129557698584704 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:04:36,094 autoreload 15704 131794474823808 Watching for file changes with StatReloader
+INFO 2024-11-18 21:05:11,068 views 15704 131794412242624 The coin flip resulted in Heads
+ERROR 2024-11-18 21:05:11,091 log 15704 131794412242624 Internal Server Error: /lesson01/heads_or_tails/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 26, in heads_or_tails
+    return render(request, "lesson01_app.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: lesson01_app.html
+ERROR 2024-11-18 21:05:11,092 basehttp 15704 131794412242624 "GET /lesson01/heads_or_tails/ HTTP/1.1" 500 89980
+INFO 2024-11-18 21:06:39,715 autoreload 15704 131794474823808 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:06:39,979 autoreload 15769 125070841630848 Watching for file changes with StatReloader
+INFO 2024-11-18 21:06:41,741 views 15769 125070779352768 The coin flip resulted in Tails
+INFO 2024-11-18 21:06:41,749 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:51,489 views 15769 125070779352768 The coin flip resulted in Heads
+INFO 2024-11-18 21:06:51,490 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:52,874 views 15769 125070779352768 The coin flip resulted in Heads
+INFO 2024-11-18 21:06:52,875 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:54,101 views 15769 125070779352768 The coin flip resulted in Heads
+INFO 2024-11-18 21:06:54,102 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:55,093 views 15769 125070779352768 The coin flip resulted in Tails
+INFO 2024-11-18 21:06:55,094 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:56,172 views 15769 125070779352768 The coin flip resulted in Tails
+INFO 2024-11-18 21:06:56,173 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:06:57,129 views 15769 125070779352768 The coin flip resulted in Tails
+INFO 2024-11-18 21:06:57,129 basehttp 15769 125070779352768 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 436
+INFO 2024-11-18 21:07:57,432 autoreload 15769 125070841630848 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:07:57,727 autoreload 15837 135156158132352 Watching for file changes with StatReloader
+INFO 2024-11-18 21:07:59,173 views 15837 135156094469824 The coin flip resulted in Heads
+INFO 2024-11-18 21:07:59,180 basehttp 15837 135156094469824 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 448
+INFO 2024-11-18 21:08:14,801 views 15837 135156094469824 The dice rolled a 3
+INFO 2024-11-18 21:08:14,802 basehttp 15837 135156094469824 "GET /lesson01/dice/ HTTP/1.1" 200 416
+INFO 2024-11-18 21:10:55,029 views 15837 135156094469824 The dice rolled a 5
+INFO 2024-11-18 21:10:55,032 basehttp 15837 135156094469824 "GET /lesson01/dice/ HTTP/1.1" 200 595
+INFO 2024-11-18 21:11:01,820 views 15837 135156094469824 The random number is 29
+INFO 2024-11-18 21:11:01,822 basehttp 15837 135156094469824 "GET /lesson01/random_number/ HTTP/1.1" 200 617
+INFO 2024-11-18 21:11:04,627 views 15837 135156094469824 The dice rolled a 3
+INFO 2024-11-18 21:11:04,628 basehttp 15837 135156094469824 "GET /lesson01/dice/ HTTP/1.1" 200 595
+INFO 2024-11-18 21:20:13,560 autoreload 15837 135156158132352 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/urls.py changed, reloading.
+INFO 2024-11-18 21:20:13,938 autoreload 16620 138499048800384 Watching for file changes with StatReloader
+WARNING 2024-11-18 21:21:48,242 log 16620 138498986215104 Not Found: /lesson01/heads_or_tails_count/
+WARNING 2024-11-18 21:21:48,243 basehttp 16620 138498986215104 "GET /lesson01/heads_or_tails_count/ HTTP/1.1" 404 4631
+INFO 2024-11-18 21:22:13,894 views 16620 138498986215104 The coin flip resulted in Tails
+INFO 2024-11-18 21:22:13,902 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:22:13,911 views 16620 138498986215104 The coin flip resulted in Tails
+INFO 2024-11-18 21:22:13,920 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:22:13,928 views 16620 138498986215104 The coin flip resulted in Tails
+INFO 2024-11-18 21:22:13,936 basehttp 16620 138498986215104 "GET /lesson01/heads_or_tails_count/5 HTTP/1.1" 200 692
+INFO 2024-11-18 21:27:08,540 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,548 views 16620 138498986215104 The coin flip resulted in Tails
+INFO 2024-11-18 21:27:08,555 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,563 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,571 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,579 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,587 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,594 views 16620 138498986215104 The coin flip resulted in Tails
+INFO 2024-11-18 21:27:08,605 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,613 views 16620 138498986215104 The coin flip resulted in Heads
+INFO 2024-11-18 21:27:08,615 basehttp 16620 138498986215104 "GET /lesson01/heads_or_tails_count/10 HTTP/1.1" 200 883
+INFO 2024-11-18 21:32:01,836 autoreload 16620 138499048800384 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/urls.py changed, reloading.
+INFO 2024-11-18 21:32:02,257 autoreload 17804 130324696227968 Watching for file changes with StatReloader
+INFO 2024-11-18 21:36:54,141 autoreload 17804 130324696227968 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:36:54,502 autoreload 18108 134762571350144 Watching for file changes with StatReloader
+INFO 2024-11-18 21:38:17,805 autoreload 18108 134762571350144 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:38:18,063 autoreload 18210 126486601150592 Watching for file changes with StatReloader
+INFO 2024-11-18 21:39:04,258 autoreload 18210 126486601150592 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/urls.py changed, reloading.
+INFO 2024-11-18 21:39:04,510 autoreload 18234 139356111622272 Watching for file changes with StatReloader
+INFO 2024-11-18 21:39:16,549 basehttp 18234 139356048197312 "GET /lesson01/heads_or_tails HTTP/1.1" 301 0
+ERROR 2024-11-18 21:39:16,566 log 18234 139356037711552 Internal Server Error: /lesson01/heads_or_tails/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: heads_or_tails() missing 1 required positional argument: 'count'
+ERROR 2024-11-18 21:39:16,567 basehttp 18234 139356037711552 "GET /lesson01/heads_or_tails/ HTTP/1.1" 500 69686
+INFO 2024-11-18 21:41:24,156 autoreload 18234 139356111622272 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:41:24,415 autoreload 18290 125276112683136 Watching for file changes with StatReloader
+ERROR 2024-11-18 21:41:27,569 log 18290 125276050687680 Internal Server Error: /lesson01/heads_or_tails/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 39, in heads_or_tails
+    res_lst.append(coin_flip)
+    ^^^^^^^
+NameError: name 'res_lst' is not defined. Did you mean: 'result'?
+ERROR 2024-11-18 21:41:27,570 basehttp 18290 125276050687680 "GET /lesson01/heads_or_tails/ HTTP/1.1" 500 74116
+INFO 2024-11-18 21:42:01,741 autoreload 18290 125276112683136 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:42:02,040 autoreload 18314 133985394606208 Watching for file changes with StatReloader
+INFO 2024-11-18 21:42:02,760 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:02,787 basehttp 18314 133985260799680 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 631
+INFO 2024-11-18 21:42:11,124 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,131 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,139 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,147 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,155 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:11,162 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,170 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,177 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,185 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,192 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:11,193 basehttp 18314 133985260799680 "GET /lesson01/heads_or_tails/10 HTTP/1.1" 200 883
+INFO 2024-11-18 21:42:18,862 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,870 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:18,878 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,885 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,893 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,901 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,908 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,916 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,924 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:18,932 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:18,933 basehttp 18314 133985260799680 "GET /lesson01/heads_or_tails/10 HTTP/1.1" 200 883
+INFO 2024-11-18 21:42:21,312 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,320 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,327 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,335 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,343 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,350 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,358 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,366 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:21,374 views 18314 133985260799680 The coin flip resulted in Heads
+INFO 2024-11-18 21:42:21,383 views 18314 133985260799680 The coin flip resulted in Tails
+INFO 2024-11-18 21:42:21,384 basehttp 18314 133985260799680 "GET /lesson01/heads_or_tails/10 HTTP/1.1" 200 883
+INFO 2024-11-18 21:46:17,027 autoreload 18314 133985394606208 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:46:17,334 autoreload 18595 138407094730880 Watching for file changes with StatReloader
+INFO 2024-11-18 21:47:47,765 autoreload 18595 138407094730880 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-18 21:47:48,104 autoreload 18616 129391886958720 Watching for file changes with StatReloader
