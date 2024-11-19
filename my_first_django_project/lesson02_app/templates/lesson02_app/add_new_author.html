@@ -1,0 +1,15 @@
+{% extends "lesson02_app/base.html" %}
+
+{% block title %}Add new author{% endblock title %}
+
+{% block content %}
+<h1>{{ message }}</h1>
+{% if form %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Добавить" />
+  </form>
+{% endif %}
+
+{% endblock content %}

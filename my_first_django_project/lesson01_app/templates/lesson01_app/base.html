@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="{% url "main" %}">Main</a>
-            <a href="{% url "about" %}">About</a>
-            <a href="{% url "heads_or_tails" %}">Heads or Tails</a>
-            <a href="{% url "dice" %}">Dice</a>
-            <a href="{% url "random_number" %}">Random Number</a>
-            
-        </nav>
+      <nav>
+        <a href="{% url 'main' %}">Main</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'choose_game' %}">Choose Game</a>
+      </nav>
     </header>
-    
-    {% block content %}{% endblock content %}
-</body>
+
+    {% block content %}
+    {% endblock %}
+  </body>
 </html>

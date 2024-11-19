@@ -539,3 +539,393 @@ INFO 2024-11-18 21:46:17,027 autoreload 18314 133985394606208 /home/malgurvik/Py
 INFO 2024-11-18 21:46:17,334 autoreload 18595 138407094730880 Watching for file changes with StatReloader
 INFO 2024-11-18 21:47:47,765 autoreload 18595 138407094730880 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
 INFO 2024-11-18 21:47:48,104 autoreload 18616 129391886958720 Watching for file changes with StatReloader
+INFO 2024-11-19 13:46:43,772 autoreload 6193 129681142665344 Watching for file changes with StatReloader
+WARNING 2024-11-19 13:46:47,891 log 6193 129681080714944 Not Found: /
+WARNING 2024-11-19 13:46:47,891 basehttp 6193 129681080714944 "GET / HTTP/1.1" 404 2478
+WARNING 2024-11-19 13:46:47,943 log 6193 129681080714944 Not Found: /favicon.ico
+WARNING 2024-11-19 13:46:47,945 basehttp 6193 129681080714944 "GET /favicon.ico HTTP/1.1" 404 2529
+WARNING 2024-11-19 13:46:59,015 log 6193 129681080714944 Not Found: /docs
+WARNING 2024-11-19 13:46:59,015 basehttp 6193 129681080714944 "GET /docs HTTP/1.1" 404 2508
+INFO 2024-11-19 13:47:00,207 views 6193 129681080714944 Main page accessed
+INFO 2024-11-19 13:47:00,215 basehttp 6193 129681080714944 "GET /lesson01/main/ HTTP/1.1" 200 621
+INFO 2024-11-19 13:47:03,567 views 6193 129681080714944 About page accessed
+INFO 2024-11-19 13:47:03,571 basehttp 6193 129681080714944 "GET /lesson01/about/ HTTP/1.1" 200 571
+INFO 2024-11-19 13:47:05,145 views 6193 129681080714944 Main page accessed
+INFO 2024-11-19 13:47:05,146 basehttp 6193 129681080714944 "GET /lesson01/main/ HTTP/1.1" 200 621
+INFO 2024-11-19 13:47:06,692 views 6193 129681080714944 The coin flip resulted in Heads
+INFO 2024-11-19 13:47:06,693 basehttp 6193 129681080714944 "GET /lesson01/heads_or_tails/ HTTP/1.1" 200 631
+INFO 2024-11-19 13:47:09,991 views 6193 129681080714944 The dice rolled a 4
+INFO 2024-11-19 13:47:09,991 basehttp 6193 129681080714944 "GET /lesson01/dice/ HTTP/1.1" 200 1097
+INFO 2024-11-19 13:59:17,726 autoreload 6193 129681142665344 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-19 13:59:18,046 autoreload 6713 135715860418688 Watching for file changes with StatReloader
+INFO 2024-11-19 13:59:19,429 views 6713 135715729966784 The dice rolled a 5
+ERROR 2024-11-19 13:59:19,453 log 6713 135715729966784 Internal Server Error: /lesson01/dice/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 62, in dice
+    "result": f"The dice rolled a '{list(dice_roll)}'",
+                                    ^^^^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+ERROR 2024-11-19 13:59:19,454 basehttp 6713 135715729966784 "GET /lesson01/dice/ HTTP/1.1" 500 73557
+INFO 2024-11-19 13:59:43,301 autoreload 6713 135715860418688 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-19 13:59:43,699 autoreload 6727 123926389743744 Watching for file changes with StatReloader
+INFO 2024-11-19 14:03:39,654 autoreload 6727 123926389743744 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/models.py changed, reloading.
+INFO 2024-11-19 14:03:39,936 autoreload 7080 124445262844032 Watching for file changes with StatReloader
+INFO 2024-11-19 20:13:50,391 autoreload 8736 124009017708672 Watching for file changes with StatReloader
+WARNING 2024-11-19 20:13:55,387 log 8736 124008955643584 Not Found: /
+WARNING 2024-11-19 20:13:55,388 basehttp 8736 124008955643584 "GET / HTTP/1.1" 404 2478
+WARNING 2024-11-19 20:13:55,436 log 8736 124008955643584 Not Found: /favicon.ico
+WARNING 2024-11-19 20:13:55,436 basehttp 8736 124008955643584 "GET /favicon.ico HTTP/1.1" 404 2529
+INFO 2024-11-19 20:14:11,373 basehttp 8736 124008955643584 "GET /lesson01/ HTTP/1.1" 200 13
+INFO 2024-11-19 20:14:49,982 basehttp 8736 124008955643584 "GET /lesson01/choose_game HTTP/1.1" 301 0
+INFO 2024-11-19 20:14:49,985 views 8736 124008945157824 Game page accessed
+ERROR 2024-11-19 20:14:50,016 log 8736 124008945157824 Internal Server Error: /lesson01/choose_game/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 110, in choose_game
+    return render(request, "lesson01_app/choose_game.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: lesson01_app/choose_game.html
+ERROR 2024-11-19 20:14:50,018 basehttp 8736 124008945157824 "GET /lesson01/choose_game/ HTTP/1.1" 500 88601
+INFO 2024-11-19 20:16:07,927 views 8736 124008945157824 Game page accessed
+ERROR 2024-11-19 20:16:07,956 log 8736 124008945157824 Internal Server Error: /lesson01/choose_game/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: lesson01_app.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py", line 110, in choose_game
+    return render(request, "lesson01_app/choose_game.html", {"form": form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: lesson01_app.html
+ERROR 2024-11-19 20:16:07,957 basehttp 8736 124008945157824 "GET /lesson01/choose_game/ HTTP/1.1" 500 136085
+INFO 2024-11-19 20:17:16,267 views 8736 124008945157824 Game page accessed
+INFO 2024-11-19 20:17:16,274 basehttp 8736 124008945157824 "GET /lesson01/choose_game/ HTTP/1.1" 200 791
+INFO 2024-11-19 20:18:02,525 autoreload 8736 124009017708672 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson01_app/views.py changed, reloading.
+INFO 2024-11-19 20:18:02,791 autoreload 8936 134473421172864 Watching for file changes with StatReloader
+INFO 2024-11-19 20:18:29,136 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:18:29,153 basehttp 8936 134473358247616 "GET /lesson01/choose_game/ HTTP/1.1" 200 1219
+INFO 2024-11-19 20:18:46,751 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:18:46,751 views 8936 134473358247616 The dice rolled a 4
+INFO 2024-11-19 20:18:46,752 views 8936 134473358247616 The dice rolled a 4
+INFO 2024-11-19 20:18:46,752 views 8936 134473358247616 The dice rolled a 4
+INFO 2024-11-19 20:18:46,752 views 8936 134473358247616 The dice rolled a 3
+INFO 2024-11-19 20:18:46,752 views 8936 134473358247616 The dice rolled a 4
+INFO 2024-11-19 20:18:46,754 basehttp 8936 134473358247616 "POST /lesson01/choose_game/ HTTP/1.1" 200 708
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 The dice rolled a 1
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 The dice rolled a 2
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 The dice rolled a 1
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 The dice rolled a 2
+INFO 2024-11-19 20:20:42,201 views 8936 134473358247616 The dice rolled a 3
+INFO 2024-11-19 20:20:42,203 basehttp 8936 134473358247616 "POST /lesson01/choose_game/ HTTP/1.1" 200 582
+INFO 2024-11-19 20:20:45,089 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:20:45,098 basehttp 8936 134473358247616 "GET /lesson01/choose_game/ HTTP/1.1" 200 1093
+INFO 2024-11-19 20:20:53,480 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:20:53,489 views 8936 134473358247616 The coin flip resulted in Heads
+INFO 2024-11-19 20:20:53,497 views 8936 134473358247616 The coin flip resulted in Heads
+INFO 2024-11-19 20:20:53,505 views 8936 134473358247616 The coin flip resulted in Tails
+INFO 2024-11-19 20:20:53,513 views 8936 134473358247616 The coin flip resulted in Tails
+INFO 2024-11-19 20:20:53,521 views 8936 134473358247616 The coin flip resulted in Heads
+INFO 2024-11-19 20:20:53,529 views 8936 134473358247616 The coin flip resulted in Tails
+INFO 2024-11-19 20:20:53,529 basehttp 8936 134473358247616 "POST /lesson01/choose_game/ HTTP/1.1" 200 650
+INFO 2024-11-19 20:21:16,593 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:21:16,596 basehttp 8936 134473358247616 "GET /lesson01/choose_game/ HTTP/1.1" 200 1093
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 Game page accessed
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 The random number is 93
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 The random number is 27
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 The random number is 65
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 The random number is 54
+INFO 2024-11-19 20:21:24,996 views 8936 134473358247616 The random number is 39
+INFO 2024-11-19 20:21:24,997 basehttp 8936 134473358247616 "POST /lesson01/choose_game/ HTTP/1.1" 200 605
+INFO 2024-11-19 20:52:42,433 autoreload 8936 134473421172864 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 20:52:42,818 autoreload 11046 125068623782016 Watching for file changes with StatReloader
+INFO 2024-11-19 20:58:16,232 autoreload 11046 125068623782016 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 20:58:16,497 autoreload 11433 125661644173440 Watching for file changes with StatReloader
+ERROR 2024-11-19 20:58:27,727 log 11433 125661580625600 Internal Server Error: /lesson02/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py", line 9, in index
+    return render(request, 'index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2024-11-19 20:58:27,728 basehttp 11433 125661580625600 "GET /lesson02/ HTTP/1.1" 500 89313
+INFO 2024-11-19 20:58:48,763 autoreload 11433 125661644173440 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 20:58:49,024 autoreload 11450 135120035586176 Watching for file changes with StatReloader
+ERROR 2024-11-19 20:58:53,290 log 11450 135119973123776 Internal Server Error: /lesson02/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py", line 9, in index
+    return render(request, 'base.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-11-19 20:58:53,292 basehttp 11450 135119973123776 "GET /lesson02/ HTTP/1.1" 500 89430
+INFO 2024-11-19 21:01:06,721 autoreload 11450 135120035586176 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 21:01:06,997 autoreload 11689 123857914253440 Watching for file changes with StatReloader
+INFO 2024-11-19 21:01:08,082 basehttp 11689 123857851647680 "GET /lesson02/ HTTP/1.1" 200 336
+INFO 2024-11-19 21:01:10,733 basehttp 11689 123857851647680 "GET /lesson02/ HTTP/1.1" 200 336
+INFO 2024-11-19 21:01:11,944 basehttp 11689 123857851647680 "GET /lesson02/ HTTP/1.1" 200 336
+INFO 2024-11-19 21:01:12,836 basehttp 11689 123857851647680 "GET /lesson02/ HTTP/1.1" 200 336
+INFO 2024-11-19 21:01:13,623 basehttp 11689 123857851647680 "GET /lesson02/ HTTP/1.1" 200 336
+INFO 2024-11-19 21:03:57,765 autoreload 11689 123857914253440 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/urls.py changed, reloading.
+INFO 2024-11-19 21:03:58,081 autoreload 11886 125777167261824 Watching for file changes with StatReloader
+INFO 2024-11-19 21:07:50,816 basehttp 11886 125777104340672 "GET /lesson02/ HTTP/1.1" 200 407
+INFO 2024-11-19 21:07:53,191 basehttp 11886 125777104340672 "GET /lesson02/add_new_author/ HTTP/1.1" 200 1385
+ERROR 2024-11-19 21:15:56,504 log 11886 125777104340672 Internal Server Error: /lesson02/add_new_author/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: lesson02_app_author.birth_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py", line 21, in add_new_author
+    author = Author.objects.create(first_name=first_name, last_name=last_name, email=email,)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: lesson02_app_author.birth_date
+ERROR 2024-11-19 21:15:56,507 basehttp 11886 125777104340672 "POST /lesson02/add_new_author/ HTTP/1.1" 500 171656
+INFO 2024-11-19 21:18:54,614 autoreload 11886 125777167261824 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 21:18:54,870 autoreload 12410 129655282659456 Watching for file changes with StatReloader
+ERROR 2024-11-19 21:21:52,092 log 12410 129655220733632 Internal Server Error: /lesson02/add_new_author/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: lesson02_app_author.birth_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py", line 21, in add_new_author
+    author = Author.objects.create(first_name=first_name, last_name=last_name, email=email,)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: lesson02_app_author.birth_date
+ERROR 2024-11-19 21:21:52,095 basehttp 12410 129655220733632 "POST /lesson02/add_new_author/ HTTP/1.1" 500 171632
+INFO 2024-11-19 21:22:56,907 autoreload 12410 129655282659456 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 21:22:57,168 autoreload 12596 123463571501184 Watching for file changes with StatReloader
+INFO 2024-11-19 21:23:05,316 autoreload 12596 123463571501184 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 21:23:05,581 autoreload 12601 126406966096000 Watching for file changes with StatReloader
+INFO 2024-11-19 21:23:18,007 basehttp 12601 126406904252096 "GET /lesson02/add_new_author/ HTTP/1.1" 200 1411
+ERROR 2024-11-19 21:25:05,671 log 12601 126406904252096 Internal Server Error: /lesson02/add_new_author/
+Traceback (most recent call last):
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py", line 30, in add_new_author
+    return render(request, "add_new_author.html", {"message": message})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/malgurvik/PycharmProjects/Learn_Django/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_new_author.html
+ERROR 2024-11-19 21:25:05,672 basehttp 12601 126406904252096 "POST /lesson02/add_new_author/ HTTP/1.1" 500 93206
+INFO 2024-11-19 21:26:20,475 autoreload 12601 126406966096000 /home/malgurvik/PycharmProjects/Learn_Django/my_first_django_project/lesson02_app/views.py changed, reloading.
+INFO 2024-11-19 21:26:20,831 autoreload 12687 129627642327168 Watching for file changes with StatReloader
+INFO 2024-11-19 21:27:07,089 basehttp 12687 129627580270272 "GET /lesson02/add_new_author/ HTTP/1.1" 200 1411
+INFO 2024-11-19 21:28:15,767 basehttp 12687 129627580270272 "POST /lesson02/add_new_author/ HTTP/1.1" 200 633
+INFO 2024-11-19 21:30:27,007 basehttp 12687 129627580270272 "GET /lesson02/add_new_author/ HTTP/1.1" 200 1414
+INFO 2024-11-19 21:32:08,359 basehttp 12687 129627580270272 "POST /lesson02/add_new_author/ HTTP/1.1" 200 410
+INFO 2024-11-19 21:32:17,852 basehttp 12687 129627580270272 "GET /lesson02/ HTTP/1.1" 200 407

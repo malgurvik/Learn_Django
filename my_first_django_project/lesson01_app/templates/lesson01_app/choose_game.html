@@ -1,0 +1,13 @@
+{% extends 'lesson01_app/base.html' %}
+
+{% block title %}
+  Choose the game
+{% endblock %}
+
+{% block content %}
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Выбрать" />
+  </form>
+{% endblock %}

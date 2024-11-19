@@ -5,6 +5,7 @@
 {% block content %}
 <h1>{{ game_name }}</h1>
 <ul>
+    {% if result %}{% endif %}
     {% for r in result %}
         <li>{{ r }}</li>
     {% endfor %}

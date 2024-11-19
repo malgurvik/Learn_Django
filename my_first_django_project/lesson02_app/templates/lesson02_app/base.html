@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Main{% endblock  %}</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="{% url 'index' %}">Main</a>
+            <a href="{% url 'add_new_author' %}">Add new author</a>
+        </nav>
+    </div>
+    {% block content %}
+        <h1>Hello, this is main page</h1>
+    {% endblock  %}
+</body>
+</html>
